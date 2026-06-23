@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFK Academy - Programming for Kids</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="PFK Academy — Egypt's premier live coding academy for kids aged 6–17. Web development, robotics, AI and game design. Join 9,000+ students across 7 countries.">
+    <meta name="theme-color" content="#23306E">
+
+    <!-- Open Graph (WhatsApp / Facebook link previews) -->
+    <meta property="og:title" content="PFK Academy — Where Young Minds Build the Future">
+    <meta property="og:description" content="Live, interactive coding courses for kids aged 6–17. From building games to exploring AI, we make technology fun, creative, and empowering.">
+    <meta property="og:image" content="assets/hero.png">
+    <meta property="og:type" content="website">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Icon_Blue.png">
+    
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="PFKAcademy.css">
+</head>
+<body>
+
+    <!-- ============================================================
+    NAVIGATION
+    JS will add .scrolled class on scroll for height + border effect
+    ============================================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-wrapper">
+                    <img src="assets/Icon_Blue.png" alt="PFK Academy Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-main">PFK</span>
+                        <span class="logo-accent">Academy</span>
+                    </div>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#student-work">Student Work</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+           
+                <li><a href="#cta" class="nav-cta">Enroll Now</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+    </nav>
+
+    <!-- ============================================================
+    HERO SECTION
+    .hero-content and .hero-image get fade-in after page loader clears
+    ============================================================ -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🔥 Live Online Sessions</span>
+                <h1>
+                    Where Young Minds <br>
+                    <span class="highlight">Build the Future.</span>
+                </h1>
+                <p>
+                    Live, interactive coding courses for kids aged 6–17.
+                    From building games to exploring AI, we make technology
+                    fun, creative, and empowering.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#cta" class="btn-primary">Get Started Today</a>
+                    <a href="#programs" class="btn-secondary">Explore Programs</a>
+                </div>
+                <!-- Stats: JS count-up animation runs on these numbers -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number"><span class="accent">+</span>5,000</span>
+                        <span class="stat-label">Students Taught</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number"><span class="accent">+</span>7</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number"><span class="accent">+</span>50</span>
+                        <span class="stat-label">Expert Instructors</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Image floats subtly via CSS animation -->
+            <div class="hero-image">
+                <img src="assets/hero.png"
+                     alt="Kids coding together"
+                     loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT SECTION
+    .about-content slides in from left, .about-image from right (JS)
+    ============================================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <span class="section-tag">About PFK Academy</span>
+                <h2 class="section-title">
+                    Empowering the Next <br>Generation of Creators
+                </h2>
+                <p>
+                    PFK Academy is Egypt's premier coding and STEM education
+                    institute for kids aged 6 to 17. We offer live, online
+                    courses in web development, game design, robotics, and
+                    artificial intelligence.
+                </p>
+                <p>
+                    Since 2016, we've helped thousands of students develop
+                    the skills to innovate and create value in a
+                    technology-driven world.
+                </p>
+
+                <div class="stem-badge">
+                    <img src="assets/stem.png" alt="STEM Accredited" class="stem-logo">
+                    <span>STEM Accredited Program</span>
+                </div>
+
+                <div class="mission-vision">
+                    <div class="mv-item">
+                        <div class="mv-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div>
+                            <h4>Our Mission</h4>
+                            <p>To make coding accessible, fun, and impactful for every child, empowering them to become creators of technology.</p>
+                        </div>
+                    </div>
+                    <div class="mv-item">
+                        <div class="mv-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div>
+                            <h4>Our Vision</h4>
+                            <p>To raise a generation of innovative thinkers who use technology to solve real-world problems and shape the future.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-features">
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Live Online Sessions</span>
+                    </div>
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert Instructors</span>
+                    </div>
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Project-Based Learning</span>
+                    </div>
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Ages 6–17</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/about.png"
+                     alt="Students learning to code"
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PROGRAMS SECTION
+    Cards stagger-reveal on scroll (0ms, 100ms, 200ms delays via JS)
+    ============================================================ -->
+    <!-- ============================================================
+   PROGRAMS SECTION — REDESIGNED (More Attractive & Persuasive)
+   ============================================================ -->
+<section class="programs" id="programs">
+    <div class="container">
+        <div class="programs-header">
+            <span class="section-tag">Our Programs</span>
+            <h2 class="section-title">
+                Your Child's <span class="text-navy">Tech</span> <span class="text-teal">Journey</span> Starts Here
+            </h2>
+            <p class="section-subtitle">
+                From first-time coders to future innovators — we have the perfect path for every child aged 6–17.
+            </p>
+        </div>
+
+        <!-- ============================================================
+        PATHWAY NAVIGATION — Age-Based Tabs
+        ============================================================ -->
+        <div class="pathway-tabs" id="pathwayTabs">
+            <button class="pathway-tab active" data-age="all">All Courses</button>
+            <button class="pathway-tab" data-age="6-9">Ages 6–9</button>
+            <button class="pathway-tab" data-age="9-12">Ages 9–12</button>
+            <button class="pathway-tab" data-age="12-17">Ages 12–17</button>
+        </div>
+
+        <!-- ============================================================
+        COURSE CARDS — All Programs
+        ============================================================ -->
+        <div class="programs-grid" id="programsGrid">
+
+            <!-- ============================================================
+            CATEGORY 1: STANDARD COURSES (3 Levels)
+            ============================================================ -->
+            <div class="program-category" data-age="6-12">
+                <div class="category-header">
+                    <span class="category-icon"><i class="fas fa-flag"></i></span>
+                    <span class="category-label">Standard Track</span>
+                    <span class="category-levels">3 Levels</span>
+                </div>
+
+                <div class="program-cards-row">
+                    <!-- Game Development (Scratch) -->
+                    <div class="program-card-large" data-age="6-12">
+                        <div class="program-icon-large" style="background: rgba(255, 107, 53, 0.15);">
+                            <i class="fas fa-gamepad" style="color: #FF6B35;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Game Development</h3>
+                            <p class="program-tech">Scratch</p>
+                            <p class="program-desc">Create interactive games, animations, and stories with drag-and-drop coding.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 6–12</span>
+                                <span class="meta-badge level-badge">Level 1–3</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- App Development (App Inventor) -->
+                    <div class="program-card-large" data-age="6-12">
+                        <div class="program-icon-large" style="background: rgba(52, 152, 219, 0.15);">
+                            <i class="fas fa-mobile-alt" style="color: #3498DB;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>App Development</h3>
+                            <p class="program-tech">App Inventor</p>
+                            <p class="program-desc">Design and build real Android apps using visual programming blocks.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 6–12</span>
+                                <span class="meta-badge level-badge">Level 1–3</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Coding with Python -->
+                    <div class="program-card-large" data-age="9-17">
+                        <div class="program-icon-large" style="background: rgba(55, 118, 171, 0.15);">
+                            <i class="fab fa-python" style="color: #3776AB;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Coding with Python</h3>
+                            <p class="program-tech">Python</p>
+                            <p class="program-desc">Master one of the world's most popular programming languages for AI, data, and more.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 9–17</span>
+                                <span class="meta-badge level-badge">Level 1–3</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Web Development (Front-End) -->
+                    <div class="program-card-large" data-age="9-17">
+                        <div class="program-icon-large" style="background: rgba(255, 159, 28, 0.15);">
+                            <i class="fas fa-code" style="color: #FF9F1C;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Web Development</h3>
+                            <p class="program-tech">HTML, CSS, JavaScript</p>
+                            <p class="program-desc">Build stunning websites and web apps from scratch with modern front-end technologies.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 9–17</span>
+                                <span class="meta-badge level-badge">Level 1–3</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+            CATEGORY 2: AI & ML COURSES (3 Levels)
+            ============================================================ -->
+            <div class="program-category" data-age="12-17">
+                <div class="category-header">
+                    <span class="category-icon"><i class="fas fa-brain"></i></span>
+                    <span class="category-label">AI & Machine Learning</span>
+                    <span class="category-levels">3 Levels</span>
+                    <span class="category-badge">Advanced</span>
+                </div>
+
+                <div class="program-cards-row">
+                    <div class="program-card-large" data-age="12-17">
+                        <div class="program-icon-large" style="background: rgba(155, 89, 182, 0.15);">
+                            <i class="fas fa-calculator" style="color: #9B59B6;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Linear Algebra</h3>
+                            <p class="program-tech">Math Foundations</p>
+                            <p class="program-desc">Build the mathematical foundation essential for understanding machine learning algorithms.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 12–17</span>
+                                <span class="meta-badge level-badge">Level 1</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="program-card-large" data-age="12-17">
+                        <div class="program-icon-large" style="background: rgba(231, 76, 60, 0.15);">
+                            <i class="fas fa-chart-line" style="color: #E74C3C;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Advanced Python & Data</h3>
+                            <p class="program-tech">Python, Pandas, NumPy</p>
+                            <p class="program-desc">Learn advanced Python techniques for data analysis, visualization, and machine learning.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 12–17</span>
+                                <span class="meta-badge level-badge">Level 2–3</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="program-card-large" data-age="12-17">
+                        <div class="program-icon-large" style="background: rgba(46, 204, 113, 0.15);">
+                            <i class="fas fa-robot" style="color: #2ECC71;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Machine Learning</h3>
+                            <p class="program-tech">AI, Neural Networks</p>
+                            <p class="program-desc">Build intelligent systems that learn from data — from recommendation engines to AI chatbots.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 12–17</span>
+                                <span class="meta-badge level-badge">Level 3</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+            CATEGORY 3: BACK-END WEB (3 Levels)
+            ============================================================ -->
+            <div class="program-category" data-age="12-17">
+                <div class="category-header">
+                    <span class="category-icon"><i class="fas fa-server"></i></span>
+                    <span class="category-label">Web Back-End</span>
+                    <span class="category-levels">3 Levels</span>
+                    <span class="category-badge">Advanced</span>
+                </div>
+
+                <div class="program-cards-row">
+                    <div class="program-card-large" data-age="12-17">
+                        <div class="program-icon-large" style="background: rgba(241, 196, 15, 0.15);">
+                            <i class="fab fa-js" style="color: #F1C40F;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>JavaScript</h3>
+                            <p class="program-tech">JavaScript, Node.js</p>
+                            <p class="program-desc">Master JavaScript for back-end development and build dynamic, interactive web applications.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 12–17</span>
+                                <span class="meta-badge level-badge">Level 1</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="program-card-large" data-age="12-17">
+                        <div class="program-icon-large" style="background: rgba(0, 0, 0, 0.08);">
+                            <i class="fas fa-flask" style="color: #2C3E50;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Flask Framework</h3>
+                            <p class="program-tech">Python, Flask</p>
+                            <p class="program-desc">Build powerful web applications using Flask — the lightweight Python web framework.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 12–17</span>
+                                <span class="meta-badge level-badge">Level 2</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="program-card-large" data-age="12-17">
+                        <div class="program-icon-large" style="background: rgba(39, 174, 96, 0.15);">
+                            <i class="fas fa-rocket" style="color: #27AE60;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Advanced Projects</h3>
+                            <p class="program-tech">Full Stack</p>
+                            <p class="program-desc">Apply all your skills to build real-world, portfolio-ready projects from scratch.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 12–17</span>
+                                <span class="meta-badge level-badge">Level 3</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+            CATEGORY 4: UNITY GAMES (3 Levels)
+            ============================================================ -->
+            <div class="program-category" data-age="10-17">
+                <div class="category-header">
+                    <span class="category-icon"><i class="fas fa-cube"></i></span>
+                    <span class="category-label">Unity Game Development</span>
+                    <span class="category-levels">3 Levels</span>
+                    <span class="category-badge">Advanced</span>
+                </div>
+
+                <div class="program-cards-row">
+                    <div class="program-card-large" data-age="10-17">
+                        <div class="program-icon-large" style="background: rgba(120, 120, 120, 0.15);">
+                            <i class="fas fa-code" style="color: #555;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>C# Programming</h3>
+                            <p class="program-tech">C#, .NET</p>
+                            <p class="program-desc">Learn C# — the powerful language behind Unity — and build the foundation for game development.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 10–17</span>
+                                <span class="meta-badge level-badge">Level 1</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="program-card-large" data-age="10-17">
+                        <div class="program-icon-large" style="background: rgba(241, 196, 15, 0.15);">
+                            <i class="fas fa-cube" style="color: #F39C12;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Unity 2D Games</h3>
+                            <p class="program-tech">Unity, C#</p>
+                            <p class="program-desc">Create exciting 2D games from scratch — platformers, puzzles, and more!</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 10–17</span>
+                                <span class="meta-badge level-badge">Level 2</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="program-card-large" data-age="10-17">
+                        <div class="program-icon-large" style="background: rgba(46, 204, 113, 0.15);">
+                            <i class="fas fa-cubes" style="color: #27AE60;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Unity 3D Games</h3>
+                            <p class="program-tech">Unity, C#</p>
+                            <p class="program-desc">Build immersive 3D worlds and games with advanced mechanics and stunning visuals.</p>
+                            <div class="program-meta">
+                                <span class="meta-badge age-badge">Ages 10–17</span>
+                                <span class="meta-badge level-badge">Level 3</span>
+                                <span class="meta-badge badge-advanced">Advanced</span>
+                            </div>
+                            <a href="#cta" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+            FUTURE COURSES — Teasers
+            ============================================================ -->
+            <div class="program-category future-courses">
+                <div class="category-header">
+                    <span class="category-icon"><i class="fas fa-rocket"></i></span>
+                    <span class="category-label">Coming Soon</span>
+                    <span class="category-badge" style="background: #F39C12;">Stay Tuned</span>
+                </div>
+
+                <div class="program-cards-row">
+                    <div class="program-card-large future-card" style="opacity: 0.6; border: 2px dashed var(--border-soft);">
+                        <div class="program-icon-large" style="background: rgba(231, 76, 60, 0.1);">
+                            <i class="fas fa-shield-alt" style="color: #E74C3C;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Cyber Security</h3>
+                            <p class="program-tech">Coming Soon</p>
+                            <p class="program-desc">Learn how to protect systems, networks, and data from cyber threats.</p>
+                            <span class="meta-badge badge-coming">🚀 Coming Soon</span>
+                        </div>
+                    </div>
+
+                    <div class="program-card-large future-card" style="opacity: 0.6; border: 2px dashed var(--border-soft);">
+                        <div class="program-icon-large" style="background: rgba(52, 152, 219, 0.1);">
+                            <i class="fas fa-mobile-alt" style="color: #3498DB;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>Flutter App Dev</h3>
+                            <p class="program-tech">Coming Soon</p>
+                            <p class="program-desc">Build beautiful, native apps for iOS and Android with Flutter and Dart.</p>
+                            <span class="meta-badge badge-coming">🚀 Coming Soon</span>
+                        </div>
+                    </div>
+
+                    <div class="program-card-large future-card" style="opacity: 0.6; border: 2px dashed var(--border-soft);">
+                        <div class="program-icon-large" style="background: rgba(155, 89, 182, 0.1);">
+                            <i class="fas fa-star" style="color: #9B59B6;"></i>
+                        </div>
+                        <div class="program-info">
+                            <h3>More Coming...</h3>
+                            <p class="program-tech">Stay Tuned</p>
+                            <p class="program-desc">We're constantly expanding our curriculum with cutting-edge tech courses.</p>
+                            <span class="meta-badge badge-coming">🌟 Stay Tuned</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ============================================================
+        CTA — Learn More
+        ============================================================ -->
+        <div class="programs-cta">
+            <p>Not sure which path is right for your child?</p>
+            <a href="https://wa.me/201091452286?text=Hi%20PFK%20Academy!%20I'm%20interested%20in%20enrolling%20my%20child." class="btn-primary" style="background: var(--navy);">
+                <i class="fas fa-comment-dots" style="margin-right: 8px;"></i>
+                Talk to Our Advisors
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- ============================================================
+    WHY US SECTION
+    .why-us-content slides from left, .why-us-image from right (JS)
+    ============================================================ -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-content">
+                <span class="section-tag">Why PFK Academy</span>
+                <h2 class="section-title">
+                    The <span style="color: #23306E; font-size: inherit;">PFK</span> <span style="color: #2DB9C3; font-size: inherit;">Academy</span><br>Learning Advantage
+                </h2>
+                <p class="why-us-description">
+                    We believe that it's not enough to learn how to code.
+                    Our students should be able to use their skills to innovate
+                    and create value.
+                </p>
+
+                <div class="why-us-grid">
+                    <div class="why-us-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div>
+                            <h4>Live Online Classes</h4>
+                            <p>Real-time interaction with expert instructors from the comfort of home.</p>
+                        </div>
+                    </div>
+                    <div class="why-us-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div>
+                            <h4>Project-Based Learning</h4>
+                            <p>Learn by building real projects that develop critical thinking skills.</p>
+                        </div>
+                    </div>
+                    <div class="why-us-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div>
+                            <h4>Innovate & Elevate</h4>
+                            <p>Focus on creativity and entrepreneurial thinking, not just coding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-us-image">
+                <img src="assets/why us.png"
+                     alt="Students collaborating on projects"
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PACKAGES SECTION
+    Cards stagger-reveal (0ms, 150ms, 300ms). Savings ribbons via CSS ::after.
+    Featured card has pulsing teal glow.
+    ============================================================ -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <div class="packages-header">
+                <span class="section-tag">Choose Your Plan</span>
+                <h2 class="section-title">Flexible Learning Packages</h2>
+                <p class="section-subtitle">
+                    Select the package that best fits your child's learning journey.
+                </p>
+            </div>
+            <div class="packages-grid">
+                <!-- Package 1: data-saving used by CSS ::after for ribbon -->
+                <div class="package-card" data-saving="Save 1000 EGP">
+                    <div class="package-badge">Popular</div>
+                    <h3>Original Plan</h3>
+                    <div class="package-duration">3 Months / One Level</div>
+                    <div class="package-price">2800 EGP</div>
+                    <div class="package-price-original">3800 EGP</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Course Materials</li>
+                        <li><i class="fas fa-check"></i> Technical Guidance</li>
+                        <li><i class="fas fa-x" style="color: red;"></i> Month Freeze</li>
+                        <li><i class="fas fa-check"></i> Accredited Certificate</li>
+                    </ul>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdOZQScF7cIxQek3NwDo2V5xPiLUpelJNRed8pVeMBXp6RbQ/viewform?usp=header" class="btn-package">Get Started</a>
+                </div>
+
+                <div class="package-card featured" data-saving="Save 2000 EGP">
+                    <div class="package-badge">Premium</div>
+                    <h3>Half Annual</h3>
+                    <div class="package-duration">6 Months / Two Levels</div>
+                    <div class="package-price">5200 EGP</div>
+                    <div class="package-price-original">7200 EGP</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Course Materials</li>
+                        <li><i class="fas fa-check"></i> Technical Guidance</li>
+                        <li><i class="fas fa-check"></i> One Month Freeze</li>
+                        <li><i class="fas fa-check"></i> Accredited Certificate</li>
+                    </ul>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdOZQScF7cIxQek3NwDo2V5xPiLUpelJNRed8pVeMBXp6RbQ/viewform?usp=header" class="btn-package btn-primary">Get Started</a>
+                </div>
+
+                <div class="package-card" data-saving="Save 3000 EGP">
+                    <div class="package-badge">Best Value</div>
+                    <h3>Annual Plan</h3>
+                    <div class="package-duration">12 Months / Four Levels</div>
+                    <div class="package-price">9500 EGP</div>
+                    <div class="package-price-original">12500 EGP</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Course Materials</li>
+                        <li><i class="fas fa-check"></i> Technical Guidance</li>
+                        <li><i class="fas fa-check"></i> Two Months Freeze</li>
+                        <li><i class="fas fa-check"></i> Accredited Certificate</li>
+                    </ul>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdOZQScF7cIxQek3NwDo2V5xPiLUpelJNRed8pVeMBXp6RbQ/viewform?usp=header" class="btn-package">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    STUDENT WORK SECTION
+    BUG FIX: v2 type was video/ogg → fixed to video/mp4
+    BUG FIX: v3 type was video/webm → fixed to video/mp4
+    Cards stagger-reveal on scroll (0ms, 100ms, 200ms via JS)
+    ============================================================ -->
+    <section class="student-work" id="student-work">
+        <div class="container">
+            <div class="student-work-header">
+                <span class="section-tag">Our Students in Action</span>
+                <h2 class="section-title">Projects Built by Our Students</h2>
+                <p class="section-subtitle">
+                    See what our young innovators have created with their coding skills.
+                </p>
+            </div>
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video controls muted autoplay preload="auto">
+                            <source src="assets/v1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h4>Web Development: Book Store</h4>
+                        <p>By Farida, Age 8</p>
+                        <span class="video-tag">Web Development</span>
+                    </div>
+                </div>
+
+                <!-- Video 2 — BUG FIX: was type="video/ogg", corrected to video/mp4 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="assets/v2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h4>Calculator Using Python</h4>
+                        <p>By Mohamed, Age 10</p>
+                        <span class="video-tag">Problem-Solving</span>
+                    </div>
+                </div>
+
+                <!-- Video 3 — BUG FIX: was type="video/webm", corrected to video/mp4 -->
+                <div class="video-card">
+                        <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="assets/v3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h4>Web Development: Gallery</h4>
+                        <p>By Sondos, Age 15</p>
+                        <span class="video-tag">Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS CAROUSEL
+    Drag, touch, autoplay, dots — all handled by existing JS
+    Decorative quote mark added via CSS ::before on .testimonial-card
+    ============================================================ -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Parents Are Saying</h2>
+                <p class="section-subtitle">
+                    Hear from families who have seen their children grow
+                    and thrive with PFK Academy.
+                </p>
+            </div>
+            <div class="testimonials-carousel-wrapper">
+                <div class="testimonials-carousel" id="testimonialsCarousel">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                         <blockquote dir="rtl" lang="ar">
+                         "اللهم بارك كانت جميلة معاهم و موسى الحمد لله كان متجاوب و طالع مبسوط و انا كمان اتبسطت من اسلوبها و طريقة توصيلها للمعلومة"
+                        </blockquote>
+                        <div class="author">
+                            <div class="author-img"><span>SM</span></div>
+                            <div class="author-info">
+                                <h4>Sarah M.</h4>
+                                <span>Parent of Moussa, Age 10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                       <blockquote dir="rtl" lang="ar">"
+    مبسوطين والله، والـ <span dir="ltr">Instructor</span> كانت كويسة ما شاء الله،
+ ومتفاعلة مع الأطفال، وحابين نواصل معاكم"
+</blockquote>
+                        <div class="author">
+                            <div class="author-img"><span>HO</span></div>
+                            <div class="author-info">
+                                <h4>Hanan O.</h4>
+                                <span>Parent of 3 students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                       <blockquote dir="rtl" lang="ar">
+                       "الكورس ممتاز بجد و ابني كان متجاوب و متحمس جدا 
+و مس منى ممتازة ما شاء الله عليها اسلوبها في الشرح و طولة بالها
+موفقين دايما يا رب"
+                       </blockquote>
+                       
+                        <div class="author">
+                            <div class="author-img"><span>HA</span></div>
+                            <div class="author-info">
+                                <h4>Heba A.</h4>
+                                <span>Parent of Adam, Age 8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                         <blockquote dir="rtl" lang="ar">
+                           " ماشاء الله البنت فعلا استفادت والشرح كان مبسط و المهندسه كانت مرنه فى التعامل مع الاولاد ومعانا جدا ربنا يبارك فيها"
+                        </blockquote>
+                        <div class="author">
+                            <div class="author-img"><span>MF</span></div>
+                            <div class="author-info">
+                                <h4>Maha F.</h4>
+                                <span>Parent of Lili, Age 6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote dir="rtl" lang="ar">
+                           " هو بصراحة مافيش اي تعليق سلبي بالنسبة لي خالص بصراحة استاذة الاء ممتازة وبتوصل المعلومة كويس جدا و ولادي استفادوا"
+                        </blockquote>
+                        <div class="author">
+                            <div class="author-img"><span>AN</span></div>
+                            <div class="author-info">
+                                <h4>Ahmed N.</h4>
+                                <span>Parent of 2 students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote dir="rtl" lang="ar">
+                           " احلي فيدباك طبعاً
+استفدنا جداً جداً جداً 
+عمار ماشاء الله عليه بقيت استعين بيه حتى في شغلي❤️🥰 "
+                        </blockquote>
+                        <div class="author">
+                            <div class="author-img"><span>LK</span></div>
+                            <div class="author-info">
+                                <h4>Layla K.</h4>
+                                <span>Parent of Ammar, Age 13</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote dir="rtl" lang="ar">
+                            
+" اه طبعا الولاد عندي استفادوا جدا من الكورس ومبسوطين جدا منه
+ والادارة بصراحة محترمة جدا لانها بتساعدنا كتير في موضوع تغيير المواعيد ومتعاونيين جدا وشكرا جدا علي اهتمامك"
+                        </blockquote>
+                        <div class="author">
+                            <div class="author-img"><span>MR</span></div>
+                            <div class="author-info">
+                                <h4>Mona R.</h4>
+                                <span>Parent of 3 students </span>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote dir="rtl" lang="ar">
+                            "الحمد لله حمزة مبسوط جدا وبيحب البرمجة واستفاد طبعا كتير والمهندسه سارة ما شاء الله عليها ممتازة ومتعاونة ومرنه جدا جدا مع الاطفال أسلوبها لذيذ وسلس ومخليه الاطفال ميحرجوش وهما بيسألو اي سؤال"
+                        </blockquote>
+                        <div class="author">
+                            <div class="author-img"><span>SR</span></div>
+                            <div class="author-info">
+                                <h4>Shaimaa R.</h4>
+                                <span>Parent of Hamza, age 14 </span>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                      <blockquote dir="rtl" lang="ar">
+    تمام جدًا.. الولاد استفادوا جدًا، والشرح كان ممتاز.
+    الولاد عايزين يكملوا مع نفس الـ <bdi>Instructor</bdi>،
+    ومبسوطين منها أوي.
+</blockquote>
+                        <div class="author">
+                            <div class="author-img"><span>MR</span></div>
+                            <div class="author-info">
+                                <h4>Haitham H.</h4>
+                                <span>Parent of 2 students </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous testimonials">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="carouselNext" aria-label="Next testimonials">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA SECTION
+    ============================================================ -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <h2>Ready to Start Your Child's <br>Tech Journey?</h2>
+            <p>
+                Join thousands of young innovators who are building the future
+                with PFK Academy. Limited spots available for our live sessions.
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdOZQScF7cIxQek3NwDo2V5xPiLUpelJNRed8pVeMBXp6RbQ/viewform?usp=header" class="btn-primary" target="_blank">
+                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                Enroll For Your Kids Now 
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    BUG FIX: Email href now uses mailto:
+    BUG FIX: WhatsApp icon target changed from URL string to _blank
+    Gradient top border line added via CSS
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-wrapper">
+                            <img src="assets/Icon_White.png" alt="PFK Academy Logo" class="logo-img">
+                            <div class="logo-text">
+                                <span class="logo-main">PFK</span>
+                                <span class="logo-accent">Academy</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p>
+                        Code. Innovate. Elevate. <br>
+                        Empowering young minds through technology and creativity.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#student-work">Student Work</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+201091452286">+201091452286</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100089580247641" target="_blank">Facebook Page</a></li>
+                        <!-- BUG FIX: was href="academypfk@gmail.com" — missing mailto: -->
+                        <li><a href="mailto:academypfk@gmail.com">academypfk@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100089580247641" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pfk.academy?igsh=NDUzcHBudmtoMmVs" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <!-- BUG FIX: was target="https://wa.me/..." — URL was in wrong attribute -->
+                        <a href="https://wa.me/201091452286?text=Hi%20PFK%20Academy!%20I'm%20interested%20in%20enrolling%20my%20child."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="follow-text">Stay connected for updates, tips, and student success stories!</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 PFK Academy. All rights reserved.</span>
+                <span>
+                    <a href="#">Privacy Policy</a> &middot;
+                    <a href="#">Terms of Service</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    WHATSAPP FLOATING BUTTON
+    Tooltip visible on desktop hover only (hidden via CSS on mobile)
+    Entrance animation: fades in 1.5s after page load
+    ============================================================ -->
+    <div class="whatsapp-float" aria-label="Chat with PFK Academy on WhatsApp">
+        <span class="whatsapp-tooltip">Chat with us</span>
+        <a href="https://wa.me/201091452286?text=Hi%20PFK%20Academy!%20I'm%20interested%20in%20enrolling%20my%20child."
+           class="whatsapp-btn"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Chat with PFK Academy on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Main JavaScript — loaded last for performance -->
+    <script src="PFKAcademy.js"></script>
+</body>
+</html>
